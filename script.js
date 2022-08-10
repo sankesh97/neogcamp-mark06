@@ -1,5 +1,5 @@
 let inputText = document.querySelector("#input");
-let outputText = document.querySelector("#output").value;
+let outputText = document.querySelector("#output");
 
 let translateBinion = () => {
   console.log(inputText.value);

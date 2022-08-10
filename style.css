@@ -2,11 +2,49 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+#container {
+  width: 50vw;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.header {
+.coloured-container {
   width: 100%;
-  text-align: center;
-  background-color: aqua;
+  background-color: #f5e050;
+  padding: 10px;
+}
+
+.form-control {
+  margin: 20px;
+}
+
+.textareas {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.textareas:focus {
+  outline: none;
+  border-color: #f5e050;
+}
+
+button {
+  background-color: #f5e050;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 95vw;
+    text-align: center;
+  }
 }
