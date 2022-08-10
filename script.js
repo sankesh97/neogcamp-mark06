@@ -2,7 +2,8 @@ let inputText = document.querySelector("#input");
 let outputText = document.querySelector("#output");
 
 let translateBinion = () => {
-  console.log(inputText.value);
+  let myNotification = new Audio("./banana.mp3");
+  myNotification.play();
   fetch(
     "https://api.funtranslations.com/translate/minion.json?text=" +
       inputText.value
@@ -11,6 +12,6 @@ let translateBinion = () => {
     .then((data) => (outputText.innerText = data.contents.translated))
     .catch((error) => {
       console.log(error);
-      alert("Something went wrong! Please try after some time.");
+      alert("Something went wrong! Please try after an hour");
     });
 };
